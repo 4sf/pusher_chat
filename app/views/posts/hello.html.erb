@@ -1,0 +1,11 @@
+<h1>pusher 테스트</h1>
+
+<%= text_field_tag :msg %>
+<a href="#" id="talk_submit">보내기</a>
+
+<% @talks.each do |talk| %>
+  <p><%= talk.message %></p>
+<% end %>
+<div id="talks">
+  <p></p>
+</div>
